@@ -24,7 +24,7 @@
     [UIView beginAnimations:@"animation" context:nil];
     [UIView setAnimationDuration:3.0];
     [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
-    self.view.backgroundColor = [UIColor yellowColor];
+    self.view.backgroundColor = [UIColor greenColor];
     [UIView commitAnimations];
     
 }
@@ -35,4 +35,12 @@
     // Dispose of any resources that can be recreated.
 }
 
+-(void)touchesBegan:(NSSet *)touches withEvent:(UIEvent *)event
+{
+    [UIView beginAnimations:@"animation" context:nil];
+    [UIView setAnimationDuration:3.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    self.view.backgroundColor = [UIColor purpleColor];
+    [UIView commitAnimations];
+}
 @end
