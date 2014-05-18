@@ -18,6 +18,15 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.view.backgroundColor = [UIColor redColor];
+    
+    [UIView beginAnimations:@"animation" context:nil];
+    [UIView setAnimationDuration:3.0];
+    [UIView setAnimationCurve:UIViewAnimationCurveEaseInOut];
+    self.view.backgroundColor = [UIColor yellowColor];
+    [UIView commitAnimations];
+    
 }
 
 - (void)didReceiveMemoryWarning
